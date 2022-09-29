@@ -1,0 +1,27 @@
+@use "mixins" as mix;
+@use "variables" as var;
+
+html,
+body {
+  margin: 0;
+
+  header {
+    background-color: pink;
+
+    img {
+      width: 25%;
+    }
+  }
+
+  main {
+    background-color: cadetblue;
+  }
+
+  .about {
+    background-color: chocolate;
+  }
+
+  footer {
+    background-color: crimson;
+  }
+}

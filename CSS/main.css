@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+}
+html header,
+body header {
+  background-color: pink;
+}
+html header img,
+body header img {
+  width: 25%;
+}
+html main,
+body main {
+  background-color: cadetblue;
+}
+html .about,
+body .about {
+  background-color: chocolate;
+}
+html footer,
+body footer {
+  background-color: crimson;
+}
+
+/*# sourceMappingURL=main.css.map */
