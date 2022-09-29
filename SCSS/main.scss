@@ -5,8 +5,29 @@ html,
 body {
   margin: 0;
 
+  * {
+    box-sizing: border-box;
+  }
   header {
-    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb7b2;
+
+    nav {
+      background-color: #ff9aa2;
+      ul {
+        @include mix.lista;
+      }
+    }
+
+    .head-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     img {
       width: 25%;
@@ -14,14 +35,67 @@ body {
   }
 
   main {
-    background-color: cadetblue;
+    background-color: #ffdac1;
+
+    .menybox,
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10%;
+
+      img {
+        width: 50%;
+      }
+      button {
+        @include mix.button;
+      }
+    }
   }
 
   .about {
-    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2f0cb;
+
+    padding: 10%;
   }
 
   footer {
-    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b5ead7;
+    padding: 5%;
+  }
+
+  @media screen and (min-width: 768px) {
+    header {
+      .head-container {
+        flex-direction: row;
+        gap: 30px;
+      }
+      img {
+        width: 15%;
+      }
+    }
+
+    main {
+      .menybox {
+        flex-direction: row;
+        padding: 5%;
+
+        .item {
+          padding: 0;
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
   }
 }

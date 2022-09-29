@@ -1,0 +1,24 @@
+@mixin lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+
+  li {
+    text-decoration: none;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@mixin button {
+  margin-top: 5%;
+  background-color: #e2f0cb;
+  border: none;
+  border-radius: 20px;
+  padding: 5%;
+}

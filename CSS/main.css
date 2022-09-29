@@ -2,9 +2,45 @@ html,
 body {
   margin: 0;
 }
+html *,
+body * {
+  box-sizing: border-box;
+}
 html header,
 body header {
-  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb7b2;
+}
+html header nav,
+body header nav {
+  background-color: #ff9aa2;
+}
+html header nav ul,
+body header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+html header nav ul li,
+body header nav ul li {
+  text-decoration: none;
+  list-style: none;
+}
+html header nav ul li a,
+body header nav ul li a {
+  text-decoration: none;
+}
+html header .head-container,
+body header .head-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 html header img,
 body header img {
@@ -12,15 +48,75 @@ body header img {
 }
 html main,
 body main {
-  background-color: cadetblue;
+  background-color: #ffdac1;
+}
+html main .menybox,
+html main .item,
+body main .menybox,
+body main .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+html main .menybox img,
+html main .item img,
+body main .menybox img,
+body main .item img {
+  width: 50%;
+}
+html main .menybox button,
+html main .item button,
+body main .menybox button,
+body main .item button {
+  margin-top: 5%;
+  background-color: #e2f0cb;
+  border: none;
+  border-radius: 20px;
+  padding: 5%;
 }
 html .about,
 body .about {
-  background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2f0cb;
+  padding: 10%;
 }
 html footer,
 body footer {
-  background-color: crimson;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b5ead7;
+  padding: 5%;
+}
+@media screen and (min-width: 768px) {
+  html header .head-container,
+body header .head-container {
+    flex-direction: row;
+    gap: 30px;
+  }
+  html header img,
+body header img {
+    width: 15%;
+  }
+  html main .menybox,
+body main .menybox {
+    flex-direction: row;
+    padding: 5%;
+  }
+  html main .menybox .item,
+body main .menybox .item {
+    padding: 0;
+  }
+  html main .menybox .item img,
+body main .menybox .item img {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
